@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.text.*?>
+<?import java.lang.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane prefHeight="437.0" prefWidth="752.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="sample.controls.NeedToBuyController">
+   <children>
+      <Label layoutX="12.0" layoutY="3.0" text="Заканчивающиеся запчасти" AnchorPane.leftAnchor="12.0" AnchorPane.topAnchor="3.0">
+         <font>
+            <Font size="19.0" />
+         </font>
+      </Label>
+      <TableView fx:id="dataTable" layoutX="12.0" layoutY="39.0" prefHeight="380.0" prefWidth="722.0" AnchorPane.bottomAnchor="18.0" AnchorPane.leftAnchor="12.0" AnchorPane.rightAnchor="18.0" AnchorPane.topAnchor="39.0">
+         <columnResizePolicy>
+            <TableView fx:constant="CONSTRAINED_RESIZE_POLICY" />
+         </columnResizePolicy>
+         <columns>
+            <TableColumn prefWidth="75.0" text="Название" />
+            <TableColumn prefWidth="75.0" text="Совместимость" />
+            <TableColumn prefWidth="75.0" text="Осталось" />
+         </columns>
+      </TableView>
+   </children>
+</AnchorPane>

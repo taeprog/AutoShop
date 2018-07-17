@@ -1,0 +1,95 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.*?>
+<?import javafx.scene.text.*?>
+<?import java.lang.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane prefHeight="400.0" prefWidth="719.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="sample.controls.SoldController">
+   <children>
+      <SplitPane dividerPositions="0.4" layoutX="90.0" layoutY="62.0" prefHeight="160.0" prefWidth="200.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+        <items>
+          <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="160.0" prefWidth="100.0">
+               <children>
+                  <TableView fx:id="shortTable" layoutX="-35.0" layoutY="65.0" prefHeight="200.0" prefWidth="200.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="30.0">
+                    <columns>
+                      <TableColumn prefWidth="75.0" text="Дата\Время" />
+                      <TableColumn prefWidth="75.0" text="Сумма" />
+                    </columns>
+                     <columnResizePolicy>
+                        <TableView fx:constant="CONSTRAINED_RESIZE_POLICY" />
+                     </columnResizePolicy>
+                  </TableView>
+                  <Label layoutX="14.0" layoutY="7.0" text="Чеки" AnchorPane.leftAnchor="5.0" AnchorPane.topAnchor="5.0">
+                     <font>
+                        <Font size="16.0" />
+                     </font>
+                  </Label>
+               </children>
+            </AnchorPane>
+          <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="398.0" prefWidth="385.0">
+               <children>
+                  <TableView fx:id="fullTable" layoutX="34.0" layoutY="99.0" prefHeight="320.0" prefWidth="354.0" AnchorPane.bottomAnchor="48.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="30.0">
+                    <columns>
+                      <TableColumn prefWidth="75.0" text="Название" />
+                      <TableColumn prefWidth="75.0" text="Количество" />
+                        <TableColumn prefWidth="75.0" text="Стоимость" />
+                    </columns>
+                      <columnResizePolicy>
+                          <TableView fx:constant="CONSTRAINED_RESIZE_POLICY" />
+                      </columnResizePolicy>
+                  </TableView>
+                  <Label layoutX="14.0" layoutY="364.0" text="Итог:" textFill="#01680a" AnchorPane.bottomAnchor="17.0" AnchorPane.leftAnchor="14.0">
+                     <font>
+                        <Font name="System Bold" size="17.0" />
+                     </font>
+                  </Label>
+                  <Label fx:id="sum" layoutX="151.0" layoutY="360.0" textFill="#01680a" AnchorPane.bottomAnchor="17.0" AnchorPane.rightAnchor="150.0">
+                     <font>
+                        <Font name="System Bold" size="17.0" />
+                     </font>
+                  </Label>
+                  <Label layoutX="12.0" layoutY="2.0" text="Подробно" AnchorPane.leftAnchor="5.0" AnchorPane.topAnchor="5.0">
+                     <font>
+                        <Font size="16.0" />
+                     </font>
+                  </Label>
+               </children>
+            </AnchorPane>
+        </items>
+      </SplitPane>
+      <HBox fx:id="passPane" alignment="CENTER" prefHeight="100.0" prefWidth="200.0" style="-fx-background-color: #ffffff;" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+         <children>
+            <VBox alignment="CENTER" prefHeight="200.0" prefWidth="100.0">
+               <children>
+                  <Label alignment="CENTER" text="Введите пароль" textAlignment="CENTER">
+                     <font>
+                        <Font name="System Bold" size="18.0" />
+                     </font>
+                     <VBox.margin>
+                        <Insets bottom="2.0" />
+                     </VBox.margin>
+                  </Label>
+                  <Label fx:id="wrongPass" text="Неверный пароль" textFill="RED" visible="false">
+                     <font>
+                        <Font size="15.0" />
+                     </font>
+                  </Label>
+                  <PasswordField minWidth="200.0" fx:id="password">
+                     <VBox.margin>
+                        <Insets bottom="10.0" />
+                     </VBox.margin>
+                  </PasswordField>
+                  <Button alignment="CENTER" mnemonicParsing="false" onAction="#checkPass" text="Войти" />
+               </children>
+               <HBox.margin>
+                  <Insets />
+               </HBox.margin>
+            </VBox>
+         </children>
+      </HBox>
+   </children>
+</AnchorPane>

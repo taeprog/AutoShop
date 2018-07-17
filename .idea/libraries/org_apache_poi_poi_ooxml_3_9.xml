@@ -1,0 +1,17 @@
+<component name="libraryTable">
+  <library name="org.apache.poi:poi-ooxml:3.9" type="repository">
+    <properties maven-id="org.apache.poi:poi-ooxml:3.9" />
+    <CLASSES>
+      <root url="jar://$PROJECT_DIR$/src/libs/poi-ooxml-3.9.jar!/" />
+      <root url="jar://$PROJECT_DIR$/src/libs/poi-3.9.jar!/" />
+      <root url="jar://$PROJECT_DIR$/src/libs/commons-codec-1.5.jar!/" />
+      <root url="jar://$PROJECT_DIR$/src/libs/poi-ooxml-schemas-3.9.jar!/" />
+      <root url="jar://$PROJECT_DIR$/src/libs/xmlbeans-2.3.0.jar!/" />
+      <root url="jar://$PROJECT_DIR$/src/libs/stax-api-1.0.1.jar!/" />
+      <root url="jar://$PROJECT_DIR$/src/libs/dom4j-1.6.1.jar!/" />
+      <root url="jar://$PROJECT_DIR$/src/libs/xml-apis-1.0.b2.jar!/" />
+    </CLASSES>
+    <JAVADOC />
+    <SOURCES />
+  </library>
+</component>
